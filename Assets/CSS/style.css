@@ -1,0 +1,20 @@
+/* custom properties */
+
+:root {
+  --ff-primary: ;
+  --ff-secondary: ;
+
+  --fw-reg: ;
+  --fw-bold: ;
+
+  --clr-light: white;
+  --clr-dark: rgb(67, 29, 117);
+  --clr-accent: rgb(195, 112, 233);
+  --clr-black: black;
+  --clr-fade: rgb(148, 148, 148);
+
+  --fs-h1: ;
+  --fs-h2: ;
+  --fs-h3: ;
+  --fs-body: ;
+}
