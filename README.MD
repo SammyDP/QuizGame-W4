@@ -45,7 +45,7 @@ Grading Requirements
 
 Trivia Questions
 
-    1.  Why so JavaScript and Java have similar name?
+    1.  Why do JavaScript and Java have similar name?
         A.  JavaScript is a stripped-down version of Java
         B.  JavaScript's syntax is loosely based on Java's
         C.  They both originated on the island of Java

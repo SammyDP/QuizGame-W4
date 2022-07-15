@@ -58,6 +58,24 @@
 .top_bar p {
   float: right;
 }
+#view-hs {
+  display: flex;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--clr-fade);
+  font-family: var(--ff-primary);
+  font-weight: 500;
+}
+#view-hs:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 var(--clr-dark);
+  transition: transform 150ms;
+  transform: scale(1.03);
+}
+
+.score {
+  display: flex;
+}
 
 /* inner container */
 
@@ -117,9 +135,6 @@ main {
   display: none;
   margin-top: 40vh;
 }
-/* .top_bar {
-  display: none;
-} */
 
 /* highscores screen */
 
