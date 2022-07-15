@@ -13,9 +13,9 @@
 
   --clr-light: white;
   --clr-dark: rgb(67, 29, 117);
-  --clr-accent: rgb(195, 112, 233);
-  --clr-black: black;
   --clr-fade: rgb(148, 148, 148);
+  --clr-right: rgb(89, 224, 89);
+  --clr-wrong: rgb(219, 101, 101);
 }
 
 /* button styling */
@@ -123,7 +123,6 @@ main {
 .question_screen {
   display: none;
   margin-top: 30vh;
-  /* border-bottom: 1px solid black; */
 }
 .question_screen h2 {
   margin-bottom: 2em;
