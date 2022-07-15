@@ -1,20 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* border: 1px solid rgb(47, 228, 183); */
+}
+
 /* custom properties */
 
 :root {
-  --ff-primary: ;
-  --ff-secondary: ;
-
-  --fw-reg: ;
-  --fw-bold: ;
+  --ff-primary: "Rubik Mono One", "Gentium Book Plus", sans-serif;
 
   --clr-light: white;
   --clr-dark: rgb(67, 29, 117);
   --clr-accent: rgb(195, 112, 233);
   --clr-black: black;
   --clr-fade: rgb(148, 148, 148);
+}
 
-  --fs-h1: ;
-  --fs-h2: ;
-  --fs-h3: ;
-  --fs-body: ;
+/* button styling */
+
+.btn {
+  text-decoration: none;
+  border-radius: 5px;
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 var(--clr-dark);
+  transition: transform 150ms;
+  transform: scale(1.03);
+}
+
+/* body */
+.body {
+}
+
+/* outer container */
+
+.outer_container {
+  background-color: var(--clr-fade);
+  font-family: var(--ff-primary);
+  padding: 10px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+/* top bar */
+
+.top_bar p {
+  float: right;
+}
+
+/* inner container */
+
+.inner_container {
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+}
+.inner_container p {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+h1,
+h2 {
+  text-align: center;
+}
+
+/* header */
+
+.quiz_intro {
+  margin-top: 10vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: block;
+}
+.quiz_intro h1 {
+  margin-bottom: 2em;
+}
+.quiz_intro button {
+  margin-left: 38%;
+}
+
+/* main container */
+
+main {
+  display: block;
+}
+
+/* question screen */
+
+.question_screen {
+  display: none;
+  margin-top: 30vh;
+  /* border-bottom: 1px solid black; */
+}
+.question_screen h2 {
+  margin-bottom: 2em;
+}
+
+/* finish screen */
+
+.finish_screen {
+  display: none;
+  margin-top: 40vh;
+}
+/* .top_bar {
+  display: none;
+} */
+
+/* highscores screen */
+
+.highscores_screen {
+  display: none;
+  margin-top: 10vh;
+}
+.highscores_screen button {
+  margin-top: 1em;
+  align-items: center;
+  justify-content: space-between;
 }

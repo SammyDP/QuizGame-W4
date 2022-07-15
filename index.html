@@ -7,51 +7,93 @@
     <title>Quiz Game</title>
 
     <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Prompt:wght@300&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="Assets/CSS/style.css" />
   </head>
 
+  <!-- ----------------- -->
+  <!-- Content Container -->
+  <!-- ----------------- -->
+
   <body>
-    <!-- rules box -->
+    <div class="outer_container">
+      <!-- top bar -->
 
-    <div class="rules_box">
-      <div class="rules_title">
-        <span>Coding Quiz Challenge</span>
+      <div class="top_bar">
+        <a href="">View High Scores</a>
+        <p id="">Timer: 75</p>
       </div>
+      <!-- -------- -->
+      <!-- main box -->
+      <!-- -------- -->
 
-      <div class="rules_list">
-        <div class="rules">
-          1. Answer the following code-related questions within the time limit
-          given.
-        </div>
-        <div class="rules">
-          2. Any incorrect answers will penalize your score/time by ten seconds.
-        </div>
-        <div class="rules">3. The game ends when your time expires.</div>
-        <div class="rules">Good Luck, We're all Counting on You!</div>
-      </div>
+      <!-- Part 1 -->
 
-      <!-- quiz box -->
-
-      <div class="quiz_box">
-        <header>
-          <div class="view_hs">
-            <a href=""></a>
-          </div>
-          <div class="timer">
-            <div class="timer_text">Time Left:</div>
-            <div class="timer_sec">75</div>
-          </div>
-
-          <div class=""></div>
+      <div class="inner_container">
+        <header class="quiz_intro">
+          <h1>Coding Quiz Challenge</h1>
+          <ul>
+            <li>
+              Answer the following code-related questions within the time limit
+              given.
+            </li>
+            <li>
+              Any incorrect answers will penalize your score/time by ten
+              seconds.
+            </li>
+            <li>The game ends when your time expires.</li>
+          </ul>
+          <p>Good Luck, We're all Counting on You!</p>
+          <button class="btn" id="start_btn">Start Quiz</button>
         </header>
+
+        <!-- Part 2 -->
+
+        <main>
+          <section class="question_screen">
+            <h2 id="">Questions here</h2>
+            <ul id="">
+              <li><button class="btn" id="ansr_btn1">Answer 1</button></li>
+              <li><button class="btn" id="ansr_btn2">Answer 2</button></li>
+              <li><button class="btn" id="ansr_btn3">Answer 3</button></li>
+              <li><button class="btn" id="ansr_btn4">Answer 4</button></li>
+            </ul>
+          </section>
+          <!-- JS funtion  -->
+          <!-- <p>correct!</p> -->
+          <!-- <p>Incorrect!</p> -->
+
+          <!-- Part 3 -->
+
+          <section class="finish_screen">
+            <h2>Quiz FInished!</h2>
+            <p>Your Score: 00</p>
+            <div>
+              <label for="">Enter Initials:</label>
+              <input type="text" />
+              <button class="btn" id="submit_btn">Submit</button>
+            </div>
+          </section>
+
+          <!-- Part 4 -->
+
+          <section class="highscores_screen">
+            <h2>Highscore:</h2>
+            <ol>
+              <li>SP - 100</li>
+            </ol>
+            <button class="btn" id="back_btn">Go Back</button>
+            <button class="btn" id="clear_btn">Clear Highscores</button>
+          </section>
+        </main>
       </div>
-
-      <!-- start button -->
-
-      <div class="start_btn"><button>Start Quiz</button></div>
     </div>
-
     <script src="Assets/JS/script.js"></script>
   </body>
   <footer></footer>
