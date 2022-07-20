@@ -24,22 +24,22 @@
   <!-- ----------------- -->
 
   <body>
-    <div class="outer_container">
+    <div class="outer-container">
       <!-- top bar -->
 
-      <div class="top_bar">
-        <button id="view-hs">View High Scores</button>
+      <div class="top-bar">
+        <button id="view_hs">View High Scores</button>
         </button>
-        <p class="score">Timer: <span id="time">90</span></p>
+        <p class="timer">Timer: <span id="time">30</span></p>
       </div>
       <!-- -------- -->
       <!-- main box -->
       <!-- -------- -->
 
-      <!-- Part 1 -->
+      <!-- Phase 1 -->
 
-      <div class="inner_container">
-        <header class="quiz_intro">
+      <div class="inner-container">
+        <header class="quiz-intro">
           <h1>Coding Quiz Challenge</h1>
           <ul>
             <li>
@@ -47,51 +47,234 @@
               given.
             </li>
             <li>
-              Any incorrect answers will penalize your score/time by ten
+              Any incorrect answers will penalize your score & time by ten
               seconds.
             </li>
             <li>The game ends when your time expires.</li>
           </ul>
           <p>Good Luck, We're all Counting on You!</p>
-          <button class="btn" id="start-btn">Start Quiz</button>
+          <button class="btn" id="start_btn">Start Quiz</button>
         </header>
 
-        <!-- Part 2 -->
+        <!-- Phase 2 -->
 
         <main>
-          <section class="question_screen">
-            <h2 id="">Why do JavaScript and Java have similar name?</h2>
-            <ul id="">
-              <li>
-                <button class="btn" id="ansr_btn1">
-                  A. JavaScript is a stripped-down version of Java
-                </button>
-              </li>
-              <li>
-                <button class="btn" id="ansr_btn2">
-                  B. JavaScript's syntax is loosely based on Java's
-                </button>
-              </li>
-              <li>
-                <button class="btn" id="ansr_btn3">
-                  C. They both originated on the island of Java
-                </button>
-              </li>
-              <li>
-                <button class="btn" id="ansr_btn4">D. None of the above</button>
-              </li>
-            </ul>
+          <section class="question-screen">
+            <div id="question1"> <h2 id="questions">Why do JavaScript and Java have similar name?</h2>
+
+              <ul id="answer_set1">
+                <li>
+                  <button class="btn" id="answer1">
+                    JavaScript is a stripped-down version of Java
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer2">
+                    JavaScript's syntax is loosely based on Java's
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer3">
+                    They both originated on the island of Java
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer4">None of the above</button>
+                </li>
+              </ul>
+            </div>
+            <div id="question2"> <h2 id="questions">When a user views a page containing a JavaScript program, which machine actually executes the script?</h2>
+
+              <ul id="answer_set2">
+                <li>
+                  <button class="btn"  id="answer1.2">The User's machine running a Web browser</button>
+                </li>
+                <li>
+                  <button class="btn" id="answer2.2">The Web server
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer3.2">A central machine deep within Netscape's corporate offices
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer4.2">None of the above</button>
+                </li>
+              </ul>
+            </div>
+            <div id="question3"> <h2 id="questions">______ JavaScript is also called client-side JavaScript.</h2>
+
+              <ul id="answer_set3">
+                <li>
+                  <button class="btn"  id="answer1.3">Microsoft
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer2.3">Navigator
+                   
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer3.3">LiveWire
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer4.3">Native</button>
+                </li>
+              </ul>
+            </div>
+            <div id="question4"> <h2 id="questions">What are variables used for in JavaScript Programs?</h2>
+
+              <ul id="answer_set4">
+                <li>
+                  <button class="btn"  id="answer1.4">Storing numbers, dates, or other values
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer2.4">Varying randomly
+                   
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer3.4">Causing high-school algebra flashbacks
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer4.4">None of the above</button>
+                </li>
+              </ul>
+            </div>
+            <div id="question5"> <h2 id="questions">_____ JavaScript statements embedded in an HTML page can respond to user events such as mouse-clicks, form input, and page navigation.</h2>
+
+              <ul id="answer_set5">
+                <li>
+                  <button class="btn"  id="answer1.5">Client-side
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer2.5">Server-side
+                   
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer3.5">Local
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer4.5">Native</button>
+                </li>
+              </ul>
+            </div>
+            <div id="question6"> <h2 id="questions">Which of the following can't be done with client-side JavaScript?</h2>
+
+              <ul id="answer_set6">
+                <li>
+                  <button class="btn"  id="answer1.6">Validating a form
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer2.6">Sending a form's contents by email
+                   
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer3.6">Storing the form's contents to a database file on the server
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer4.6">None of the above</button>
+                </li>
+              </ul>
+            </div>
+            <div id="question7"> <h2 id="questions">Which of the following are capabilities of functions in JavaScript?</h2>
+
+              <ul id="answer_set7">
+                <li>
+                  <button class="btn"  id="answer1.7">Return a value
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer2.7">Accept parameters and Return a value
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer3.7">Accept parameters
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer4.7">None of the above</button>
+                </li>
+              </ul>
+            </div>
+            <div id="question8"> <h2 id="questions">Which of the following is not a valid JavaScript variable name?</h2>
+
+              <ul id="answer_set8">
+                <li>
+                  <button class="btn"  id="answer1.8">2names
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer2.8">_first_and_last_names
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer3.8">FirstAndLast
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer4.8">None of the above</button>
+                </li>
+              </ul>
+            </div>
+            <div id="question9"> <h2 id="questions">______ tag is an extension to HTML that can enclose any number of JavaScript statements.</h2>
+
+              <ul id="answer_set9">
+                <li>
+                  <button class="btn"  id="answer1.9">SCRIPT
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer2.9">BODY
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer3.9">HEAD
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer4.9">TITLE</button>
+                </li>
+              </ul>
+            </div>
+            <div id="question10"> <h2 id="questions">How does JavaScript store dates in a date object?</h2>
+
+              <ul id="answer_set10">
+                <li>
+                  <button class="btn correct"  id="answer1.10">The number of milliseconds since January 1st, 1970
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer2.10">The number of days since January 1st, 1900
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer3.10">The number of seconds since Netscape's public stock offering.
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" id="answer4.10">None of the above</button>
+                </li>
+              </ul>
+            </div>
+            <button id="next">Next Question</button>
           </section>
-          <!-- JS funtion  -->
-          <!-- <p>correct!</p> -->
-          <!-- <p>Incorrect!</p> -->
-          <!-- border-bottom: 1px solid black; CSS -->
 
-          <!-- Part 3 -->
+          <!-- Phase 3 -->
 
-          <section class="finish_screen">
+          <section class="finish-screen">
+            <h1>Cheers!!!</h1>
             <h2>Quiz Finished!</h2>
-            <p id="final-score">Your Score: 00</p>
+            <p id="your_score">Your Score: <span id="final_score">00</span></p>
             <div>
               <label for="">Enter Initials:</label>
               <input type="text" />
@@ -99,9 +282,9 @@
             </div>
           </section>
 
-          <!-- Part 4 -->
+          <!-- Phase 4 -->
 
-          <section class="highscores_screen">
+          <section class="highscores-screen">
             <h2>All-Time Highscores:</h2>
             <ol>
               <li>SP - 100</li>
@@ -112,6 +295,7 @@
         </main>
       </div>
     </div>
+    <script src="Assets/JS/questions.js"></script>
     <script src="Assets/JS/script.js"></script>
   </body>
   <footer></footer>
